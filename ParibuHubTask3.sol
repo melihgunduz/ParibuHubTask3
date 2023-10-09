@@ -13,7 +13,7 @@ contract ParibuHubTask3 {
     Account[] public admins;
 
 function getAllAdmins() public view returns(Account[] memory) {
-    Account[] memory _admins;
+    Account[] memory _admins = new Account[](admins.length);
     for(uint i=0;i<_admins.length;i++){
         _admins[i] = admins[i];
     }
